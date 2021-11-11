@@ -1,5 +1,5 @@
 const jsonServer = require('json-server');
-const PORT = process.env.REACT_APP_API || 3000;
+const PORT = process.env.PORT || 3000;
 
 const server = jsonServer.create();
 const router = jsonServer.router('database.json');
