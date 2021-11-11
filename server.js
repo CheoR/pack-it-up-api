@@ -9,5 +9,5 @@ server.use(middlewares);
 server.use(router);
 
 server.listen(PORT, () => {
- console.log('Server running . . ');
+  console.log('Server running . . ');
 });
