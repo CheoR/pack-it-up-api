@@ -1,0 +1,56 @@
+{
+  "name": "pack-it-up-json-server-heroku",
+  "version": "0.1.0",
+  "private": true,
+  "description": "json-based Heroku server for NSS Frontend Capstone Project - inventory CRUD app",
+  "keywords": [
+   "json-server,heroku, node, REST API"
+  ],
+  "author": "CheoR",
+  "license": "ISC",
+  "main": "server.js",
+  "repository": {
+  "type": "git",
+  "url": "git@github.com:CheoR/pack-it-up-api.git"
+},
+  "scripts": {
+    "start": "env-cmd -f .env.prod node server.js",
+    "start-local": "env-cmd -f .env.local node server.js",
+    "dev": "npx nodemon server.js",
+    "lint": "./node_modules/.bin/eslint --no-error-on-unmatched-pattern './src/**/*.js*'"
+  },
+  "dependencies": {
+    "env-cmd": "^10.1.0",
+    "json-server": "^0.17.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "eslint": "^7.20.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "nodemon": "^2.0.12"
+  }
+}
